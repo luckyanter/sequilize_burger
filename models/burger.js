@@ -1,7 +1,3 @@
-// Burger models
-
-// The burger has a burger_name attribute of type DataTypes.String
-// and a devoured attribute that is false by default
 
 module.exports = function(sequelize, DataTypes) {
   var Burger = sequelize.define("Burger", {
@@ -11,14 +7,6 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     }
   }
-  // , 
-  // {
-  //   classMethods: {
-  //     associate: function(models) {
-  //       // associations can be defined here
-  //     }
-  //   }
-  // }
   );
   return Burger;
 };
